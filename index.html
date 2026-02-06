@@ -1,195 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-        table td{
-            color: black;
-            font-size: larger;
-        }
+  <style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color:#faf9f6; 
+        margin: 50px 50px 0px 50px;
+    }
+    div .logo{
+      width: 250px;
+      border-radius: 3em;
+    }
 
-        footer{
-            margin-top: 20px !important;
-            background-color: hsl(0, 0%, 100%);
-            color: black;
-            text-align: center;
-            letter-spacing: 0.29em;
-            margin: 0px;
-            height: 50px;
-            font-weight: 900;
-            padding-top: 18px;
-            border-radius: 5px;
-        }
-        div{
-            border-radius: 200em; 
-            border-color: yellowgreen; 
-            border-width: 0.2em;
-            border-style: solid;
-            width: 50px;
-            height: 50px;
-            background-color: black;
-            color:white;
-            margin-left: auto;
-            text-align: center;
-            padding: 0.2em;
-            padding-top: 0.5em;
-            position: absolute; 
-            top: auto;
-            left: 95%; 
-            
-        }
-       div a{
-        color: white;
-        font-size: 1.5em;
-        text-decoration: none;
-        text-align: center;
-       }
-    </style>
+  div h1{
+      font-size: 5em;
+      display: flex;
+      flex-direction: column;
+    }
+    div >h1 span{
+      color: midnightblue;
+    }
+
+    .left-float img,.right-float img{
+      height: 200px;
+    }
+
+    .left-float img{
+      float: left;
+      margin-right: 20px; 
+    }
+
+    .right-float img{
+      float: left;
+      margin-right:20px; 
+
+    }
+
+    .left-float, .right-float{
+      width: 600px; 
+    }
+
+    .left-float, .right-float{
+      display: inline-block; 
+    }
+     
+
+    footer{
+      clear: both;
+      border-width: none;
+      color: black;
+      text-align: center;
+      font-size: smaller;
+      font-weight: bold;
+      margin-right: 0px;
+      padding: 0px;
+
+    }
+
+
+    @media (max-width: 680px){
+      .left-float, .right-float{
+      width: 300px; 
+      display: block;
+    }
+
+     div h1{
+      font-size: 3.5em;
+    }
+
+     div .logo{
+      width: 150px;
+      border-radius: 2em;
+    }
+
+    body{
+      background-color: aliceblue;
+    }
+
+    }
+
+  </style>
 </head>
-<body style="background-color: blue;color: white;margin-left: 15px;font-weight: bolder;">
-    <h1 id="ola">Isa Zakari Olagaza</h1>
-    <h3 style="color: black;font-weight: bolder;" draggable="true">Full-Stack Developer | Certified Ethical Hacker (CEH)</h3>
-    <img src="./images/PASSS.jpg" height="100">
 
-    <h2>Summary</h2>
-        <p style="color: black;">I am a dedicated and committed Full-Stack Developer as well as a tech enthusiast who is curious to explore and solve real-world problems</p>
-        <hr / style="border-width: 0.25em;border-color: greenyellow;border-radius: 5em;">
-    
-    <h2>Education</h2>
-         <p style="color: black;">Bachelor of Engineering (B.Eng.) Software Engineering-Harvards University, Toronto (2022-2025)</p>
-        <hr / style="border-width: 0.25em;border-color: greenyellow;border-radius: 5em;">
+<body>
+  <div class="main">
+    <img class="logo" src="./assets/images/logo.png" alt="logo">
+    <h1>We are a <span>Creative</span> Design Agency</h1>
+    <div class="left-float"><img src="./assets/images/beautiful.jpg" alt="hand and flower in water">
+      <h2>Beauty</h2>
+      <p class="left-float-text">We strive to create the most beautiful websites for all your needs. 
+        Working closely with you
+        to
+        design and
+        develop an amazing website for your business.</p>
+    </div>
 
-         <h2>Work Experience</h2>
-           
-            <ul>
-                <li><h3>Full-Stack Developer</h3>
-                    <h4>Microsoft Inc.</h4>
-                    <span>Jan,2021-May,2025</span><br /> <br />
-                    <ul style="color: black;">
-                        <li>Developed real-world Websites for Organizations and Institutions</li>
-                        <li>Developed Funtional Apps for Fintechs, Organizations and Institutions</li>
-                        <li>Hosted and Monitored Websites for Organizations and Institutions</li>
-                    </ul>
-                </li> <br /> 
+    <div class="right-float"><img src="./assets/images/construction.jpg" alt="metal structure">
+      <h2>Construction</h2>
+      <p class="right-float-text">Built by our team of professional developers, we ensure the most rigourous and modern websites. Built from
+        scratch using HTML and CSS. Only the best for you.</p>
+    </div>
 
-                 <li><h3>Pentester</h3>
-                    <h4>Amazon Inc.</h4>
-                    <span>June,2020-March,2025</span><br /> <br />
-                    <span style="color: black;">Assisted with:</span>
-                    
-                    <ul style="color: black;">
-                        <li>Websites/App Penetration and update</li>
-                        <li>Risk Assessment and Management</li>
-
-                    </ul>
-                 </li>
-
-
-            </ul>
-        </h4>
-        <hr / style="border-width: 0.25em;border-color: greenyellow;border-radius: 5em;"> <br />
-
-        <table border="1">
-            <tr>
-        <th><h2>Certifications</h2></th>
-        <th><h2>Awards</h2></th>
-            </tr> 
-           
-             <tr>
-                <td>
-                <ul> 
-                     <h5><li>CompTIA+</li> (2020)</h5>
-                </td>
-                    <td>
-                        <ul>
-                        <h5><li>The Queens Security Award </li>
-                    </h5>
-                        </ul>
-                    </td>
-            </tr>
-
-            <tr>
-                <td>
-                <ul> 
-                     <h5><li>Security+</li> (2021)</h5>
-                </td>
-                    <td>
-                        <ul>
-                        <h5><li>Cyber Awareness Campaign </li>
-                    </h5>
-                        </ul>
-                    </td>
-            </tr>
-
-            <tr>
-                <td>
-                <ul> 
-                     <h5><li>Network+</li> (2022)</h5>
-                </td>
-                    <td>
-                        <ul>
-                        <h5><li>Cyber Royalty Award </li>
-                    </h5>
-                        </ul>
-                    </td>
-            </tr>
-
-
-            <tr>
-                <td>
-                <ul> 
-                     <h5><li>CISSP</li> (2023)</h5>
-                </td>
-                    <td>
-                        <ul>
-                        <h5><li>Threat Actor of the Year </li>
-                    </h5>
-                        </ul>
-                    </td>
-            </tr>
-
-
-
-            <tr>
-                <td>
-                <ul> 
-                     <h5><li>Certified Ethical Hacker (CEH)<li> (2020)</h5>
-                </td>
-                    <td>
-                        <ul>
-                        <h5><li>Award-Winning Hacker</li>
-                    </h5>
-                        </ul>
-                    </td>
-            </tr>
-
-        </table> <br />
-        
-         <h2>Skills </h2>
-                    <ul style="color: black;">
-                        <li>Microsoft Suites</li>
-                        <li>Computer Networking</li>
-                        <li>Ethical Hacking</li>
-                        <li>Video Editing</li>
-                        <li>Graphic Design</li>
-                    </ul>
-                
-        <hr / style="border-width: 0.25em;border-color: greenyellow;border-radius: 5em;"> <br />
-
-
-        <h2>Others </h2>        
-            <h3><a href="./asssets/hobbies.html" style="color: black;font-size: larger;text-decoration:underline;text-shadow: 1px 2px 3px white,2px -2px 1px yellowgreen; letter-spacing: 5px;">Click to See My Hobbies/Contacts</h3>
-        <hr / style="border-width: 0.25em;border-color: greenyellow;border-radius: 5em;"> <br />
-
-        <a href="#ola"><div>Scroll <br />Top</div></a>
-
-        <footer>
-            <small>|Copyright Reserved &copy; Ola~Techhub Inc.|</small>
-        </footer> 
-                    
-
+  </div>
+  <footer>
+    <p>Copyright Reserved &copy;|Ola|Tech-Hub|Inc.</p>
+  </footer>
 </body>
+
 </html>
