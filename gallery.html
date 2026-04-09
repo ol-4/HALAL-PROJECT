@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+
+        .heading{
+            display: flex ;
+            gap: 30px ;
+            background-color: green!important;
+            border-radius: 20px!important;
+            margin-bottom: 50px!important;
+        }
+        .heading p{
+            color: white;
+            font-size: 16px;
+            text-decoration: underline;
+            font-weight: bold;
+            padding-left: 10px ;
+            cursor: pointer;
+        }
+        .heading p a{
+            color: white;
+            text-decoration:none;
+        }
+
+        .heading h1{
+            margin-left: 300px;
+            color: white!important;
+            text-align: center!important;
+            font-weight: bold!important;
+        }
+        .container{
+            display: flex!important;
+            flex-wrap: wrap!important;
+            gap: 50px; 
+            justify-content: center!important;
+        }
+        .container > * img{
+            border-radius: 10px!important;  
+        }
+
+        .container > div{ 
+            border-radius: 20px!important ;
+            border:2px solid green!important;  
+            width: 300px!important;
+            transition: 0.4s all ease-in-out!important;
+        }
+
+         .container > div:hover{
+            animation: grow 1s 1!important;
+            box-shadow: 5px 5px 5px yellowgreen,-5px -5px 5px yellowgreen!important;
+         }
+
+         @keyframes grow{
+            50%{
+                transform:scale(1.1,1.1)!important
+            }
+         }
+
+        figcaption{
+            font-size: 1em!important;
+            font-weight: bold!important;
+            text-align: center!important;
+            background-color: green!important;
+            color: white!important;
+            border-radius: 20px!important;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="heading">
+        <p><a href="./index.html">Go back Home</a></p>
+        <h1>CALEB UNIVERSITY GALLERY</h1>
+    </div>
+    <div class="container">
+        <div id="box1">
+            <figure>
+                <img src="./images/vc.jpg" alt="Varsity premise" height="150" width="250">
+                <figcaption>University Vice Chancellor</figcaption>
+            </figure>
+        </div>
+
+        <div id="box2">
+            <figure>
+                <img src="./images/convocation.jpg" alt="Varsity premise" height="150" width="250">
+                <figcaption>University Convocational Square</figcaption>
+            </figure>
+        </div>
+
+
+        <div id="box3">
+            <figure>
+                <img src="./images/board.jpg" alt="Varsity premise" height="150" width="250"> 
+                <figcaption>University Board of Trustee</figcaption>
+            </figure>
+        </div>
+
+        <div id="box4">
+            <figure>
+                <img src="./images/entrance.jpg" alt="Varsity premise" height="150" width="250">
+                <figcaption>University Entrance (Main Gate)</figcaption>
+            </figure>
+        </div>
+
+        <div id="box5">
+            <figure>
+                <img src="./images/premises.jpg" alt="Picture of the university premises" height="150" width="250">
+                <figcaption>University Premise</figcaption>
+            </figure>
+        </div>
+
+        <div id="box6">
+            <figure>
+                <img src="./images/student.jpg" alt="Varsity premise" height="150" width="250">
+                <figcaption>The Varsity Alumni</figcaption>
+            </figure>
+        </div> 
+
+    </div>
+    
+</body>
+</html>

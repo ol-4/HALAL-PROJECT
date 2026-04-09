@@ -1,120 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agency</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Caleb University</title>
+
+  <link href="./images/logo.png" rel="icon">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
 
   <style>
-    body {
-        font-family: "Poppins", sans-serif;
-        background-color:#faf9f6; 
-        margin: 50px 50px 0px 50px;
+    *{
+      margin: 0px;
     }
-    div .logo{
-      width: 250px;
-      border-radius: 3em;
+    body{
+      background-color:#ff3e9b2d
     }
 
-  div h1{
-      font-size: 5em;
-      display: flex;
-      flex-direction: column;
-    }
-    div >h1 span{
-      color: midnightblue;
+
+    header{
+      background-color: #FF3E9B;
+      height: 130px;   
     }
 
-    .left-float img,.right-float img{
-      height: 200px;
+    .row img{
+        float: left;
+        margin-top: 18px;
+    }
+    
+    header h1{
+        width: 700px;
+        font-size: 3rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-left: 350px;
+        margin-top: 10px;
+        color: initial;
+    }
+    header a{
+      text-decoration:none
     }
 
-    .left-float img{
-      float: left;
-      margin-right: 20px; 
+
+    .navbar{
+        height: 100px ; 
+        background-color: rgb(53, 75, 68);
+        position: sticky;
+        top: 0px; 
+        margin-bottom:50px;
     }
 
-    .right-float img{
-      float: left;
-      margin-right:20px; 
+    .navbar ul{
+        display: flex;
+        gap: 50px; 
+        flex-wrap: wrap;
+        margin-left: 200px;
+        margin-top: -45px;
+    }
+
+    .navbar div{
+      margin-top: -45px ;
+      margin-right:10px;
+    }
+
+    input[type="text"]{
+      width: 70%;
+      height: 40px;
+      border:none;
+      border-radius: 10px;
+      box-shadow:5px 5px 3px,-5px -5px 3px;
+    }
+
+    input[type="submit"]{
+      height: 40px;
+      border:none;
+      border-radius: 1em;
+      background-color: hsl(80, 61%, 60%);
+      color: #ffffff;
+      font-weight: bold; 
+    }
+
+    input[type="submit"]:hover{
+      background-color: hsl(80, 80%, 52%);
+      box-shadow:3px 3px 3px,-3px -3px 3px;;
+    }
+
+
+    @media all and (max-width:1200px) {
+        .navbar ul{
+        display: flex;
+        gap: 10px;  
+        flex-wrap: wrap;
+        margin-left: 10%; 
+        margin-left: 0;
+    }
+    
+     header h1{
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase; 
+        margin-left: -250px;
+     }
 
     }
 
-    .left-float, .right-float{
-      width: 600px; 
+
+    .navbar ul li{
+        list-style: none;    
+        margin-top: 20px;
+        transition: all 0.4s ease-out 0s;
     }
 
-    .left-float, .right-float{
-      display: inline-block; 
+    .navbar ul li:hover{
+        background-color: white;
+        border-radius: 50%;
+        padding:2px 7px;
     }
-     
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: yellowgreen;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+    .container h4{
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      text-shadow:5px 5px 5px rgb(17, 16, 16); 
+    }
+
+    main{
+       margin:0px 5px;  
+      
+    }
+    .div1,.div2,.div3{
+      margin-bottom:90px;  
+    }
+
+    aside,section {
+      text-align: justify;
+    }
 
     footer{
-      clear: both;
-      border-width: none;
-      color: black;
-      text-align: center;
-      font-size: smaller;
+      font-size:small;
+      text-align:center;
+      padding:30px 0px 0px 0px;
+      color: hsl(0, 17%, 98%);
+      letter-spacing:0.2em;
+      height: 100px; 
+      margin-top: 200px;
       font-weight: bold;
-      margin-right: 0px;
-      padding: 0px;
-
+      text-shadow: 2px 2px 3px rgb(17, 17, 17), -2px -2px 3px hsl(0, 0%, 7%);
+      background-color:#FF3E9B
     }
 
+    
+footer .icons{
+    font-size: 25px; 
+    transition: all 0.4s ease-in-out 0s;
+    cursor: pointer;
+    clear: both;
+}
 
-    @media (max-width: 680px){
-      .left-float, .right-float{
-      width: 300px; 
-      display: block;
-    }
+.icons #youtube:hover{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
 
-     div h1{
-      font-size: 3.5em;
-    }
+.icons #facebook:hover{
+    color: blue;
+}
 
-     div .logo{
-      width: 150px;
-      border-radius: 2em;
-    }
+.icons #twitter:hover{
+    color: cyan;
+}
 
-    body{
-      background-color: aliceblue;
-    }
+.icons #instagram:hover{
+    color: rgb(233, 9, 203); 
+}
 
-    }
+.fa-brands:hover{
+    animation-name:slidedown;
+    animation-duration:4s
+}
+
+@keyframes slidedown{
+    20%{transform:translateY(8px)} 
+}
+
+    
 
   </style>
+
 </head>
-
 <body>
-  <div class="main">
-    <img class="logo" src="./assets/images/logo.png" alt="logo">
-    <h1>We are a <span>Creative</span> Design Agency</h1>
-    <div class="left-float"><img src="./assets/images/beautiful.jpg" alt="hand and flower in water">
-      <h2>Beauty</h2>
-      <p class="left-float-text">We strive to create the most beautiful websites for all your needs. 
-        Working closely with you
-        to
-        design and
-        develop an amazing website for your business.</p>
+  <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-sm-12">
+              <a href="./index.html">
+                <img src="./images/logo.png" height="100" alt="Caleb logo">
+                <h1 id="logo">Caleb University Nigeria</h1>
+              </a>
+            </div>
+        </div>
     </div>
 
-    <div class="right-float"><img src="./assets/images/construction.jpg" alt="metal structure">
-      <h2>Construction</h2>
-      <p class="right-float-text">Built by our team of professional developers, we ensure the most rigourous and modern websites. Built from
-        scratch using HTML and CSS. Only the best for you.</p>
+  </header>
+
+
+  <nav class="navbar">
+
+    <ul>
+      <li> <a href="./index.html">Home</a></li>
+      <li> <a href="#">About</a></li>
+      <li><a href="#logo">Mission</a></li>
+      <li><a href="#vc">Vision</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="#">Portal</a></li>
+    </ul>
+
+    <div>
+      <input type="text" name="contact"> 
+      <a href="mailto:zaksola4peace@gmail.com">
+      <input type="submit" value="email us">
+      </a>
     </div>
 
+  </nav>
+
+  <main class="container">
+    <div class="row">
+
+      <section class="col-xl-12 col-lg-12 col-sm-12 div1">
+      <div>
+        <h4 id="mission">Our Mission</h4>
+        <p>When you wake up early in the money, when it raining and it feels it's sunny, and you can't afford your three square meals, and it's killing you slowly because you're starving, and you're shouting "O my Heavenly God I'm dying", but glory be to God you've risen, and you're bustling in the street to survive it, when you wanna buy stuffs and you concluded "There's no need" not because you don't need, but because you've got no money to get the honey. Money is just an object but man personifies it, it's no gender but with a unique name man identifies it, it lacks anonimity, grants acceptability, physically, socially heightens man's dignity, unveils life's reality. Hey dude! Money is good, it makes man boom, but in the case of the fools, it leads to doom, with money anything that you say is inspiring, they never can figure out that you're lying, it's the only means that one can pay life's bill, they say money is the source of all bad things, why? Because it causes rivalry, but you shouldn't let it go if you wanna live in harmony, every employer desperately needs it to pay salary, it excessiveness makes one a global gallery, lacking it makes one an orbituary, money doesn't come completely or limitedly, it does come gradually or shall I say a kinda seasonally,  </p>
+      </div>
+    </section> 
+
+      <section class="col-xl-12 col-lg-12 col-sm-12 div2">
+      <div>
+        <h4 id="vc">Vice Chancellor's Welcoming Notes</h4>
+        <p>My game with them is hide and seek, though they think I'm just a freak, they possess the house in the span of day, I own it at night when I hold the sway, they rump up and down and sink on the chair, and murmur words more foul than fair, I heard their curses and their secret prayers, in my tiny place, in their crowded drawers.</p>
+      </div>
+    </section>
+
+     <aside class="col-xl-12 col-lg-12 col-sm-12 div3">
+      <div>
+        <h4 id="vision">Our Vision</h4> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor est consectetur quos praesentium at, ipsum veniam, provident neque reiciendis commodi earum. Quam, distinctio tempora eveniet veritatis repellendus inventore itaque.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, exercitationem quod rerum esse enim et officia ipsa natus animi officiis, quidem earum explicabo itaque corporis a amet est quaerat facilis?
+        </p>
+      </div>
+    </aside>
   </div>
-  <footer>
-    <p>Copyright Reserved &copy;|Ola|Tech-Hub|Inc.</p>
-  </footer>
-</body>
 
+  </main>
+
+
+  <footer>
+    &copy;2026 | Ola Tech-hub Inc. | Copyright reserved |
+    <div class="icons">
+            <i class="fa-brands fa-youtube" id="youtube" alt="Youtube logo"></i>
+            <i class="fa-brands fa-facebook" id="facebook" alt="Facebook logo"></i>
+            <i class="fa-brands fa-twitter" id="twitter" alt="Twitter logo"></i>
+            <i class="fa-brands fa-instagram" id="instagram" alt="Instagram logo"></i>
+        </div>
+  </footer>
+
+
+   <script src="https://kit.fontawesome.com/71d108773f.js" crossorigin="anonymous"></script>
+</body>
 </html>
